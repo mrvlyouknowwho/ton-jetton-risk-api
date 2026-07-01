@@ -7,6 +7,8 @@ One HTTP call → a deterministic risk score. No SDK, no signup. **First 5 calls
 > Beta hosted endpoint: `https://mathematical-alice-occupations-permissions.trycloudflare.com`
 > (early access; the stable domain is coming — watch this repo.)
 
+📖 **Guide:** [How to spot a TON jetton rug pull before you buy](./GUIDE.md)
+
 ## Quickstart
 
 ```bash
