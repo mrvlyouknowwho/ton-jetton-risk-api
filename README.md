@@ -35,6 +35,26 @@ Response:
 
 `score`: 0 (clean) → 100 (dangerous). `flags` explain why.
 
+## Use it from an AI agent (MCP)
+
+There's an [MCP](https://modelcontextprotocol.io) server that wraps this API as a single tool,
+`assess_jetton_risk(address)` — drop it into Claude Desktop, Claude Code, or Cursor:
+
+```json
+{
+  "mcpServers": {
+    "ton-jetton-risk": {
+      "command": "npx",
+      "args": ["-y", "github:mrvlyouknowwho/ton-jetton-risk-mcp"],
+      "env": { "JETTON_RISK_API_KEY": "pick-any-string-for-your-free-trial" }
+    }
+  }
+}
+```
+
+Then just ask your agent to assess a jetton by address. Same free trial and pay-per-call as the HTTP API.
+Server: **[ton-jetton-risk-mcp](https://github.com/mrvlyouknowwho/ton-jetton-risk-mcp)**.
+
 ## What it checks
 
 | Signal | Source | Why it matters |
